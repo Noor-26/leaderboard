@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #ded8fc;
+}
+.p-img{
+    width: 46px;
+}
+.p-mainbox{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.p-head{
+    color: purple;
+    padding: 20px 30px 0 30px;
+   
+}
+.p-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#p-container{
+    width: 80%;
+    margin: 10px 10%;
+    background-color: white;
+    border-radius: 12px;
+    padding-bottom: 50px;
+}
+.p-head-2{
+    margin-left: 15px;
+    text-transform: capitalize;
+    position: relative;
+    font-size: 1.3rem;
+}
+hr{
+    opacity: 0.2;
+    width: 93%;
+    margin: auto;
+    /* padding-top: 30px; */
+    margin-top: 30px;
+    border: 1px solid;
+}
+
+/* blogs */
+.blog{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+    /* border: 2px solid red; */
+    /* width: 100%; */
+}
+#blogs{
+    /* grid-column-gap: 20px; */
+    /* gap: 2rem 3rem;
+    width: 100%;
+    border: 2px solid ;
+    /* display: grid; */
+    /* grid-template-columns: 2fr 2fr;  */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.b-info{
+    width: 100%;
+    padding-left: 10px;
+}
+.b-head{
+    /* font-size: 1.; */
+    width: 100%;
+    
+}
+.b-img{
+    width: 200px;
+    padding: 0 10px;
+}
+
+.b-author{
+    position: relative;
+    text-decoration: none;
+    color: #562EFF;
+    margin-left: 5px;
+}
+.b-name{
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.b-author::after{
+    content: "";
+    width: 0;
+    border-bottom: 2px solid crimson;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: width 0.3s linear;
+}
+.b-info:hover .b-author::after{
+    width: 100%;
+}
+
+/* leatest courses */
+
+#course{
+    width: 80%;
+    margin: 20px 10%;
+    background-color: white;
+    border-radius: 12px;
+    padding-bottom: 50px;
+    
+}
+.courses{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.details{
+
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 20px;
+}
+.c-img{
+    width: 100%;
+    /* padding: 0 10px; */
+
+}
+.c-info{
+    /* display: grid;
+
+    grid-template-columns: repeat(3,1fr); */
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    align-items: center;
+    flex-wrap: wrap;
+    /* line-height: 50px; */
+}
+.fill{
+    color: gold;
+    /* margin-bottom: 20px; */
+}
+.empty{
+    opacity: 0.5;
+}
+.c-author{
+    color: crimson;
+    /* font-size: 18px; */
+    font-weight: 600;
+    padding: 5px;
+}
+.ratin{
+    opacity: 0.5;
+}
+.time{
+    background-color: rgb(255, 193, 193);
+    /* margin: 10px; */
+    padding: 5px;
+    border-radius: 20px;
+    color: crimson;
+    padding-right: 8px;
+    /* margin-top: 20px; */
+}
+.fa-clock{
+    margin: 0 3px;
+}
+
+
+/* media quearies */
+
+
+@media screen and (max-width: 850px) {
+    .courses{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .blog{
+        width: 100%;
+        flex-direction: column;
+        line-height: 50px;
+    }
+    .b-info{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .b-img{
+        width:90%;
+        justify-content: center;
+        display: flex;
+
+        /* padding: 20px 10%; */
+    }
+    .margin{
+        /* margin: 10px 0; */
+        margin-bottom: 20px;
+        
+    }
+    .details{
+        width: 80%;
+        /* border: 2px solid; */
+        /* box-shadow: 0px 0px 20px 0 black; */
+        /* border-radius: 12px; */
+        margin: 10px 10%;
+        border-bottom: 1px solid black;
+    }
+    .c-img{
+        width: 100%;
+    }
+    .c-info{
+        justify-content: space-evenly;
+    }
+    .c-heading{
+        margin: 20px 0;
+    }
+}
+@media screen  and (max-width: 688px){
+    .p-mainbox{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen  and (max-width: 400px){
+    .p-mainbox{
+        grid-template-columns: 1fr;
+    }
+}
