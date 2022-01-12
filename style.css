@@ -3,6 +3,7 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 body{
     background-color: #ded8fc;
@@ -184,6 +185,8 @@ hr{
     margin: 20px 0;
     align-items: center;
     flex-wrap: wrap;
+    color: black;
+    font-size: 1rem;
 }
 .fill{
     color: gold;
@@ -195,6 +198,11 @@ hr{
     color: crimson;
     font-weight: 600;
     padding: 5px;
+    font-size: 17px;
+}
+.c-head{
+    color: black;
+    font-size: 1.5rem;
 }
 .ratin{
     opacity: 0.5;
