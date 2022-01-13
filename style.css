@@ -274,4 +274,27 @@ hr{
     .p-mainbox{
         grid-template-columns: 1fr;
     }
+    .details{
+        padding: 0;
+    }
+    .c-img{
+        padding: 0;
+    }
+   
+   #course > h2{
+       padding-left: 20px;
+       /* position: absolute; */
+   }
+   .c-head{
+       font-size: 20px;
+       text-align: center;
+   }
+   .c-author{
+       text-align: center;
+       font-size: 15px;
+   }
+   .c-info{
+       font-size: 13px;
+       margin: 0px 0 15px 0;
+   }
 }
