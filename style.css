@@ -7,6 +7,7 @@
 }
 body{
     background-color: #ded8fc;
+    box-sizing: border-box;
 }
 /* nav */
 
@@ -264,9 +265,10 @@ hr{
     .p-mainbox{
         grid-template-columns: repeat(2, 1fr);
     }
-    a{
+    nav a{
         display: none;
     }
+   
 }
 @media screen  and (max-width: 400px){
     .p-mainbox{
